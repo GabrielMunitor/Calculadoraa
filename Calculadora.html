@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Calculadora</title>
+    <link rel="stylesheet" href="/assets/CSS/estilos.css">
+    <script src="/assets/script/calculadora.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <div class="fundo">
+        <div class="container">
+            <div class="rowspan">
+                <div class="colspan">
+                    <input type="text" id="resultado" disabled>
+                </div>
+                <div class="col">
+                    <button type="button" onclick="insert('CE')">CE</button>
+                    <button type="button" onclick="insert('C')">C</button>
+                    <button type="button" onclick="insert('%')">%</button>
+                    <button type="button" onclick="insert('/')">÷</button>
+                </div>
+            <div class="col">
+                <button type="button" onclick="insert('7')">7</button>
+                <button type="button" onclick="insert('8')">8</button>
+                <button type="button" onclick="insert('9')">9</button>
+                <button type="button" onclick="insert('*')">X</button>
+            </div>
+            <div class="col">
+                <button type="button" onclick="insert('4')">4</button>
+                <button type="button" onclick="insert('5')">5</button>
+                <button type="button" onclick="insert('6')">6</button>
+                <button type="button" onclick="insert('+')">+</button>
+            </div>
+            <div class="col">
+                <button type="button" onclick="insert('1')">1</button>
+                <button type="button" onclick="insert('2')">2</button>
+                <button type="button" onclick="insert('3')">3</button>
+                <button type="button" onclick="insert('-')">-</button>
+            </div>
+            <div class="col">
+                <button type="button" onclick="insert('0')" >0</button>
+                <button type="button" onclick="insert('.')">.</button>
+                <button type="button" onclick="insert('00')">00</button>
+                <button type="button" onclick="calcular()">=</button>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
